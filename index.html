@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Teste</title>
+
+    <style>
+        body {
+            background-color: rgb(32, 33, 36);
+            padding: 5px;
+            padding-right: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            margin: 0; 
+            font-family: Arial, Helvetica, sans-serif;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+
+        .cima {
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            color: rgb(200,200,200);
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            position: absolute;
+            top: 10px; 
+            right: 10px;
+            cursor: pointer;
+            text-decoration: none;   
+        }
+
+        .cima img{
+            width: 25px;
+            height: auto;
+        }
+
+        .cima img:hover {
+            background-color: rgb(100, 100, 100);
+            border-radius: 100%;
+            border: 10px solid transparent; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+        }
+
+        .fazer-login {
+            background-color: rgb(137, 180, 247);
+            color: rgb(32, 33, 36);
+            padding: 10px;
+            border-radius: 10px;
+            margin-left: 20px; 
+            cursor: pointer;
+        }
+
+        .logo {
+            text-align: center;    
+        }
+
+        .logo img {
+            width: 300px;
+            height: auto;  
+        }
+
+        .pesquisa input[type="text"] {
+            background-color: transparent;
+            width: 600px;
+            height: 45px;
+            border-radius: 50px;
+            border: 1x; border-style: solid; color: rgb(48,49,52);
+            font-size: medium;
+            color: white;
+        }
+
+        .pesquisa::before {
+            display: block;
+            margin-bottom: 10px;
+            color: white;
+            font-size: medium;
+        }
+
+        .pesquisa input:hover{
+            background-color: rgb(48,49,52);
+            color: white;
+        }
+
+        .container{
+            flex-direction: column;
+            margin-bottom: 2cm;
+        }
+
+        .botoes input[type="submit"]{
+            background-color: rgb(48,49,52);
+            height: 40px; 
+            border: none; 
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .botoes input[type="submit"]:hover {
+            border: 0.5px solid white; 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .rodape1{
+            background-color: rgb(23, 23, 23);
+            display: flex;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            padding: 6px;
+            left: 0;
+            color: rgb(150,150,150);
+            flex-direction: column;
+        }
+
+        .brasil{
+            display: flex;
+            justify-content: center;
+        }
+
+        hr{
+            width: 100%;
+            left: 0;
+        }
+
+        .infos{
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .input-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .input-image {
+            margin-right: 10px; 
+        }
+
+        .pesquisarimg {
+            background-color: transparent;
+            color: rgb(200, 200, 200); 
+            width: 600px;
+            height: 45px;
+            border-radius: 50px;
+            border: 1px solid;
+            font-size: medium;
+            margin: 25px;
+            padding-left: 40px; 
+            background-image: url('pesq.png'); 
+            background-repeat: no-repeat;
+            background-size: 20px 20px;
+            background-position: 10px center; 
+        }
+
+        .pesquisarimg:hover {
+            color: white;
+            background-color: rgb(80, 80, 80);
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+    <div class="cima">
+        <a href="https://www.google.com/intl/pt-BR/gmail/about/" style="text-decoration: none; color: rgb(200, 200, 200);">Gmail</a>
+        <p>&nbsp; &nbsp; Imagens</p>
+        <p>&nbsp; &nbsp; <img src="abc.png"></p>
+        <p class="fazer-login"><a href="https://myaccount.google.com" style="text-decoration: none; color: rgb(23, 23, 23);">Fazer Login</a></p>
+        
+    </div>
+
+    <div class="logo">
+        <img src="googlewhite.png" alt="Logo Google">
+        <div class="pesquisa">  
+            <form>
+                <div class="input-container">
+                    <input type="text" name="pesquisar" class="pesquisarimg">
+                </div>
+            </form>
+        </div>
+        <div class="botoes">
+            <form>
+                <input type="submit" name="pesquisag" value="Pesquisa Google">&nbsp;
+                <input type="submit" name="sorte" value="Estou com sorte">
+            </form>
+        </div>
+        <div class="rodape1">
+            <div class="brasil">
+                Brasil
+            </div>
+
+            <hr>
+
+            <div class = "infos">
+                <p>Sobre</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>Publicidade</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>Negocios</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>Como funciona a Pesquisa</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>Privacidade</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>Termos</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>Configurações</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
